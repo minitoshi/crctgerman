@@ -36,7 +36,7 @@ async function loadNewSentence() {
         englishSentenceEl.textContent = 'Loading...';
         submitBtn.disabled = true;
 
-        const response = await fetch('http://localhost:3000/api/generate-sentence');
+        const response = await fetch('/api/generate-sentence');
         const data = await response.json();
 
         if (data.success) {
