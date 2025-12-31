@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsch Meister — Learn German</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-pattern"></div>
+
+    <div class="container">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">D</span>
+                <span class="logo-text">Deutsch Meister</span>
+            </div>
+            <div class="tagline">Master German, one sentence at a time</div>
+        </header>
+
+        <div class="translation-section">
+            <div class="card english-card">
+                <div class="card-label">Translate this</div>
+                <p id="englishSentence" class="sentence-text">Loading...</p>
+            </div>
+
+            <div class="card input-card">
+                <div class="card-label">Ihre Übersetzung</div>
+                <textarea
+                    id="germanInput"
+                    placeholder="Schreiben Sie hier auf Deutsch..."
+                    class="german-input"
+                ></textarea>
+                <button id="submitBtn" class="btn btn-primary">
+                    <span class="btn-text">Prüfen</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+
+            <div class="card result-card" id="resultSection" style="display: none;">
+                <div class="card-label">Feedback</div>
+                <div id="evaluationResult" class="evaluation-text"></div>
+                <button id="nextBtn" class="btn btn-secondary">
+                    <span class="btn-text">Nächster Satz</span>
+                    <span class="btn-arrow">↻</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
