@@ -59,7 +59,7 @@ async function loadNewSentence() {
 
 async function preloadNextSentence() {
     try {
-        const response = await fetch('http://localhost:3000/api/generate-sentence');
+        const response = await fetch('/api/generate-sentence');
         const data = await response.json();
         if (data.success) {
             nextSentenceCache = data.sentence;
@@ -103,7 +103,7 @@ async function handleSubmit() {
     submitBtn.disabled = true;
 
     try {
-        const response = await fetch('http://localhost:3000/api/evaluate', {
+        const response = await fetch('/api/evaluate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
