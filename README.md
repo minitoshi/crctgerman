@@ -1,6 +1,18 @@
-# German Learning App
+# Deutsch Meister — German Learning App
 
-A simple web application to practice German translation with AI-powered corrections.
+A web application to practice German translation with AI-powered corrections and feedback.
+
+## 🌐 Live Demo
+
+**Try it here:** [https://crctgerman-production.up.railway.app](https://crctgerman-production.up.railway.app)
+
+## ✨ Features
+
+- 🎲 **Random Sentence Generation** - AI generates new practice sentences
+- ✍️ **Translation Practice** - Translate English sentences to German
+- 🤖 **AI Feedback** - Get instant corrections and explanations
+- 🎨 **Beautiful UI** - Clean, modern design with smooth animations
+- ⚡ **Fast & Responsive** - Optimized performance with smart caching
 
 ## Setup
 
@@ -32,18 +44,42 @@ npm run dev
 
 4. Open your browser and go to: `http://localhost:3000`
 
-## Usage
+## 🛠️ Tech Stack
 
-1. Get your OpenRouter API key from https://openrouter.ai/
-2. Browse models at https://openrouter.ai/models and pick one (preferably a free one)
-3. Paste the model name in the "AI Model" field (e.g., `google/gemini-flash-1.5`)
-4. Translate the English sentence into German
-5. Click "Submit Translation" to get AI feedback
-6. Read the corrections (in German!)
-7. Click "Next Sentence" to practice more
+- **Frontend:** HTML, CSS, JavaScript (Vanilla)
+- **Backend:** Node.js, Express
+- **AI:** OpenRouter API (supports 500+ models)
+- **Deployment:** Railway
+- **Fonts:** Crimson Pro, Work Sans
 
-## How it works
+## 🚀 Local Development
 
-- Frontend: Simple HTML/CSS/JavaScript
-- Backend: Node.js + Express
-- AI: OpenRouter API (supports 500+ models)
+1. Clone the repository:
+```bash
+git clone https://github.com/minitoshi/crctgerman.git
+cd crctgerman
+```
+
+2. Install dependencies and set up environment variables (see Setup section above)
+
+3. Run locally:
+```bash
+npm start
+```
+
+## 📝 How to Use
+
+1. Visit the [live site](https://crctgerman-production.up.railway.app)
+2. Read the English sentence provided
+3. Type your German translation
+4. Click **"Prüfen"** to get AI feedback
+5. Read the corrections and explanations
+6. Click **"Nächster Satz"** for a new sentence
+
+## 🎯 Project Goals
+
+This app helps beginners practice German translation with:
+- Simple, everyday sentences
+- Immediate AI feedback
+- Clear explanations of errors
+- Unlimited practice sentences
